@@ -1,0 +1,24 @@
+{
+  "name": "blogapp",
+  "version": "1.0.0",
+  "description": "A simple CRUD application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ahmed Maruf",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.1",
+    "ejs": "^2.5.7",
+    "express": "^4.15.4",
+    "express-sanitizer": "^1.0.2",
+    "method-override": "^2.3.9",
+    "mongodb": "^2.2.31",
+    "mongoose": "^4.11.11",
+    "semantic-ui": "^2.2.13"
+  },
+  "devDependencies": {
+    "@types/express": "^4.0.37"
+  }
+}

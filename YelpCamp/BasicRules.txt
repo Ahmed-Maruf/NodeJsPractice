@@ -1,0 +1,19 @@
+
+
+
+***********************************************************************************************
+RESTFUL ROUTING
+***********************************************************************************************
+
+Action 	||  HTTP Method/Verb 	|| Result (controller#action) 	||       URL
+SHOW 	||  GET 	            || profile#show 	            ||       /profile
+NEW 	||  GET 	            || profile#new 	                ||       /profile/new
+CREATE 	||  POST 	            || profile#create               ||     	 /profile
+EDIT 	||  GET 	            || profile#edit                 ||    	 /profile/:id/edit
+UPDATE 	||  PUT     	        || profile#update               ||     	 /profile/:id
+DESTROY ||	DELETE 	            || profile#destroy 	            ||       /profile/:id
+
+
+***********************************************************************************************
+
+

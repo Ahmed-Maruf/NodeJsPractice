@@ -1,0 +1,33 @@
+<% include ../partials/header%> <!--Included from views directory-->
+
+    <div class="container"> <!--Bootstrap container-->
+        <header class="jumborton">
+            <div class="container">
+                <h1>Welcome to Yelpcamp!!!!</h1>
+                <p>View our hand-picked campgrounds all over the world</p>
+                <P><a class="btn btn-primary btn-large" href="campgrounds/new">Add new Campgrounds</a></P><!--btn .. for
+                bootstrap button-->
+            </div>
+        </header>
+
+        <div class="row text-center" style="display: flex; flex-wrap: wrap"><!--auto row and column grid system &&
+        Flex and flex wrap to fix image problem with the grid as images are of different size-->
+            <% campgrounds.forEach(function (current) { %>
+            <div class="col-md-3 col-sm-6"><!--intial three and min 2 then 1 pic will show according to size-->
+                <div class="thumbnail"><!--Image card generate-->
+                    <img src="<%= current.image%>">
+
+                    <div class="caption"><!--Image caption-->
+                        <h4> <%= current.name%> </h4>
+                    </div>
+                    <P>
+                        <a href="/campgrounds/<%= current._id%>" class="btn btn-primary">Show More</a>
+                    </P>
+
+                </div>
+            </div>
+            <%})%>
+        </div>
+    </div>
+
+<% include ../partials/footer%>
